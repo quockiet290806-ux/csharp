@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B1F0C52-3E0A-4C7B-9D58-2A6E4F1B7C93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BaiTapWinForm</RootNamespace>
+    <AssemblyName>BaiTapWinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bai07_CSDL\BaiMau_QLKhoa\QLKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai07_CSDL\BaiMau_QLKhoa\QLKhoa.Designer.cs">
+      <DependentUpon>QLKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai07_CSDL\KetNoi.cs" />
+    <Compile Include="Bai07_CSDL\NangCao1_QLSinhVien\frmQLSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai07_CSDL\NangCao1_QLSinhVien\frmQLSinhVien.Designer.cs">
+      <DependentUpon>frmQLSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai07_CSDL\NangCao2_QLDiem\frmQLDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai07_CSDL\NangCao2_QLDiem\frmQLDiem.Designer.cs">
+      <DependentUpon>frmQLDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai07_CSDL\TaiLop1_QLMonHoc\frmQLMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai07_CSDL\TaiLop1_QLMonHoc\frmQLMonHoc.Designer.cs">
+      <DependentUpon>frmQLMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai07_CSDL\VeNha1_QLLop\frmQLLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai07_CSDL\VeNha1_QLLop\frmQLLop.Designer.cs">
+      <DependentUpon>frmQLLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TH05c\BaiMau1_ListBox\frmListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\BaiMau1_ListBox\frmListBox.Designer.cs">
+      <DependentUpon>frmListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\BaiMau2_ComboBox\frmCboDanToc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\BaiMau2_ComboBox\frmCboDanToc.Designer.cs">
+      <DependentUpon>frmCboDanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\BaiMau3_TreeView\frmTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\BaiMau3_TreeView\frmTreeView.Designer.cs">
+      <DependentUpon>frmTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\NangCao1_XuLyChuoi\frmChuoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\NangCao1_XuLyChuoi\frmChuoi.Designer.cs">
+      <DependentUpon>frmChuoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\TaiLop1_UocSo\frmUocSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\TaiLop1_UocSo\frmUocSo.Designer.cs">
+      <DependentUpon>frmUocSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\TaiLop2_QuanLySinhVien\frmQuanLySinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\TaiLop2_QuanLySinhVien\frmQuanLySinhVien.Designer.cs">
+      <DependentUpon>frmQuanLySinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\VeNha1_TuDien\frmTuDien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\VeNha1_TuDien\frmTuDien.Designer.cs">
+      <DependentUpon>frmTuDien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\VeNha2_ListBoxSo\frmListboxSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\VeNha2_ListBoxSo\frmListboxSo.Designer.cs">
+      <DependentUpon>frmListboxSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05c\VeNha3_DanhBa\frmDanhBa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05c\VeNha3_DanhBa\frmDanhBa.Designer.cs">
+      <DependentUpon>frmDanhBa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\BaiMau1_Timer\frmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\BaiMau1_Timer\frmTimer.Designer.cs">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\BaiMau2_ListView\frmListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\BaiMau2_ListView\frmListView.Designer.cs">
+      <DependentUpon>frmListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\BaiMau3_FileDialog\frmFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\BaiMau3_FileDialog\frmFileDialog.Designer.cs">
+      <DependentUpon>frmFileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\NangCao1_HocVien\frmNhapHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\NangCao1_HocVien\frmNhapHocVien.Designer.cs">
+      <DependentUpon>frmNhapHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\NangCao1_HocVien\frmQuanLyHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\NangCao1_HocVien\frmQuanLyHocVien.Designer.cs">
+      <DependentUpon>frmQuanLyHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\TaiLop1_SinhVien\frmBaitap1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\TaiLop1_SinhVien\frmBaitap1.Designer.cs">
+      <DependentUpon>frmBaitap1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\TaiLop2_TaiKhoan\frmBaiTap2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\TaiLop2_TaiKhoan\frmBaiTap2.Designer.cs">
+      <DependentUpon>frmBaiTap2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\VeNha1_DemNguoc\frmDemNguoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\VeNha1_DemNguoc\frmDemNguoc.Designer.cs">
+      <DependentUpon>frmDemNguoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TH05d\VeNha2_FormMain\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TH05d\VeNha2_FormMain\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="Bai07_CSDL\Database\QLSinhVien.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
